@@ -36,7 +36,7 @@ body {
 } */
 
 /* Stylling Parent And Child   */
-.red-parent,
+/* .red-parent,
 .green-parent,
 .blue-parent,
 .orange-parent {
@@ -60,23 +60,59 @@ body {
 
 .red {
   background-color: red;
+} */
+
+/* .green-parent { */
+/* position: relative;
+  left: 400px; */
+/* } */
+
+/* .green { */
+/* background-color: green; */
+
+/* left: 50px; */
+/* } */
+
+/* .blue {
+  background-color: blue;
+} */
+
+/* .orange {
+  background-color: orange;
+} */
+
+/* stacking context and z index  */
+div {
+  height: 100px;
+  width: 100px;
 }
 
-.green-parent {
-  /* position: relative;
-  left: 400px; */
+.red {
+  background-color: red;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
 }
 
 .green {
+  position: absolute;
   background-color: green;
-
-  /* left: 50px; */
+  z-index: 1000;
 }
 
 .blue {
+  position: absolute;
+  top: 75px;
+  left: 25px;
   background-color: blue;
+  z-index: 5;
 }
 
-.orange {
-  background-color: orange;
+.yellow {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  z-index: 2;
 }
