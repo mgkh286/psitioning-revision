@@ -1,5 +1,7 @@
 body {
-  height: 2000px;
+  /* height: 2000px; */
+  margin: 0;
+  padding: 0;
 }
 
 /* div {
@@ -82,7 +84,7 @@ body {
 } */
 
 /* stacking context and z index  */
-div {
+/* div {
   height: 100px;
   width: 100px;
 }
@@ -115,4 +117,30 @@ div {
   height: 200px;
   background-color: yellow;
   z-index: 2;
+} */
+
+/* display list item  */
+.container {
+  box-sizing: border-box;
+  border: 3px solid #000;
+  margin: 20px;
+}
+
+.red {
+  background-color: red;
+  display: list-item;
+}
+
+.green {
+  width: 25px;
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+  height: 200px;
+}
+
+.orange {
+  background-color: orange;
 }
